@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ts_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Owl -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🦉"
+            android:textSize="65sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's Learn Alphabets!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:gravity="center"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your language and start learning."
+            android:textSize="14sp"
+            android:textColor="@color/ts_text"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- English Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_mint"
+            android:padding="22dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textSize="42sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English Alphabet"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Learning"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- Bangla Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_yellow"
+            android:padding="22dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="অ আ ই"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="বাংলা বর্ণমালা"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnBangla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="শেখা শুরু করো"
+                android:layout_marginTop="12dp" />
+
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Learn, Play &amp; Grow! 🌱"
+            android:textSize="15sp"
+            android:textColor="@color/ts_primary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

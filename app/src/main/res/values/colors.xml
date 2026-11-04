@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ts_primary">#8B7CF6</color>
+    <color name="ts_secondary">#77DCC0</color>
+
+    <color name="ts_yellow">#FFD166</color>
+    <color name="ts_peach">#FFB49A</color>
+
+    <color name="ts_background">#FFF9F0</color>
+    <color name="ts_text">#30304A</color>
+    <color name="ts_surface">#FFFFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+</resources>

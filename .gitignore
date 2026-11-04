@@ -1,0 +1,51 @@
+# ==========================================
+# TinySteps - Android Studio / Java Project
+# ==========================================
+
+# Gradle
+.gradle/
+**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# Local machine configuration
+local.properties
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Android build outputs
+captures/
+.externalNativeBuild/
+.cxx/
+.kotlin/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Java compiled files
+*.class
+
+# Keystore and signing credentials
+*.jks
+*.keystore
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# End of TinySteps .gitignore
+# ==========================================

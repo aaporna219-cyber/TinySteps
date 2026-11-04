@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/bg_splash"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvOwl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🦉"
+        android:textSize="100sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TinySteps"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/ts_primary"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn, Play &amp; Grow!"
+        android:textSize="16sp"
+        android:textColor="@color/ts_text"
+        android:layout_marginTop="8dp" />
+
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/ts_primary" />
+
+</LinearLayout>

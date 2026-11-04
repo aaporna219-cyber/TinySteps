@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ts_background"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textColor="@color/ts_text"
+        android:backgroundTint="@color/ts_secondary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Learn Numbers! 🔢"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/ts_text"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_card_white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSelectedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary" />
+
+        <TextView
+            android:id="@+id/tvEnglishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_text"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/tvBanglaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="এক"
+            android:textSize="22sp"
+            android:textColor="@color/ts_text"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔊 Listen"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/ts_primary" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose a Number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/ts_text"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <GridLayout
+            android:id="@+id/numberGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4" />
+
+    </ScrollView>
+
+</LinearLayout>

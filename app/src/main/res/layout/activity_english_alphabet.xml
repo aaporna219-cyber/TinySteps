@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ts_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's Learn ABC! 🦉"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap any letter to explore!"
+            android:textSize="14sp"
+            android:textColor="@color/ts_text"
+            android:gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Selected Letter Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_yellow"
+            android:padding="20dp"
+            android:layout_marginTop="22dp">
+
+            <TextView
+                android:id="@+id/tvSelectedLetter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="65sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍎"
+                android:textSize="65sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A for Apple"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔊 Listen"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+
+        <!-- Alphabet Grid Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose a Letter"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_text"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Alphabet Grid -->
+        <GridLayout
+            android:id="@+id/alphabetGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="false" />
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Great job, little learner! ⭐"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
