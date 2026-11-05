@@ -18,15 +18,13 @@
             android:orientation="vertical"
             android:padding="18dp">
 
-            <!-- Greeting -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hello, Little Learner! 👋"
                 android:textColor="@color/ts_text"
                 android:textSize="25sp"
-                android:textStyle="bold"
-                android:fontFamily="sans" />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -36,7 +34,7 @@
                 android:textColor="@color/ts_text"
                 android:textSize="15sp" />
 
-            <!-- Owl Profile Card -->
+            <!-- Welcome Card -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,7 +72,6 @@
                         android:text="Learn, Play &amp; Grow!"
                         android:textColor="@color/ts_text"
                         android:textSize="14sp" />
-
                 </LinearLayout>
             </LinearLayout>
 
@@ -88,7 +85,7 @@
                 android:textSize="21sp"
                 android:textStyle="bold" />
 
-            <!-- First Row -->
+            <!-- Row 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,7 +126,6 @@
                         android:text="A-Z &amp; অ-ঔ"
                         android:textColor="@color/ts_text"
                         android:textSize="12sp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -166,11 +162,10 @@
                         android:text="1-20"
                         android:textColor="@color/ts_text"
                         android:textSize="12sp" />
-
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Second Row -->
+            <!-- Row 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -211,7 +206,6 @@
                         android:text="Meet the animals"
                         android:textColor="@color/ts_text"
                         android:textSize="12sp" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -248,11 +242,10 @@
                         android:text="Explore colors"
                         android:textColor="@color/ts_text"
                         android:textSize="12sp" />
-
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Third Row: Food -->
+            <!-- Food Card -->
             <LinearLayout
                 android:id="@+id/cardFood"
                 android:layout_width="match_parent"
@@ -293,7 +286,6 @@
                         android:text="Learn about healthy foods"
                         android:textColor="@color/ts_text"
                         android:textSize="13sp" />
-
                 </LinearLayout>
 
                 <TextView
@@ -301,7 +293,6 @@
                     android:layout_height="wrap_content"
                     android:text="⭐"
                     android:textSize="24sp" />
-
             </LinearLayout>
 
             <!-- Games Section -->
@@ -315,10 +306,13 @@
                 android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/cardGame"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/bg_card_yellow"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 android:padding="18dp">
@@ -350,7 +344,6 @@
                         android:text="Play and learn something new!"
                         android:textColor="@color/ts_text"
                         android:textSize="13sp" />
-
                 </LinearLayout>
             </LinearLayout>
 
@@ -371,7 +364,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="🏠\nHome"
+            android:text="🏠&#10;Home"
             android:textColor="@color/ts_primary"
             android:textSize="12sp"
             android:textStyle="bold" />
@@ -381,7 +374,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="🎮\nGames"
+            android:text="🎮&#10;Games"
             android:textColor="@color/ts_text"
             android:textSize="12sp" />
 
@@ -390,7 +383,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="👨‍👩‍👧\nParent"
+            android:text="👨‍👩‍👧&#10;Parent"
             android:textColor="@color/ts_text"
             android:textSize="12sp" />
 
