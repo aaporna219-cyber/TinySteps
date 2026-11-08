@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ts_background"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/btnNumberQuizBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/ts_text"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number Quiz 🔢"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:textColor="@color/ts_text"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/numberQuizContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvNumberQuestion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Question 1 of 5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text" />
+
+            <TextView
+                android:id="@+id/tvNumberScore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⭐ Score: 0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_card_white"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tvNumberPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🍎🍎🍎"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tvNumberQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many apples are there?"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/ts_text"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnNumberOption1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="2"
+                android:textSize="18sp"
+                android:textColor="@color/ts_text"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginBottom="9dp" />
+
+            <Button
+                android:id="@+id/btnNumberOption2"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="3"
+                android:textSize="18sp"
+                android:textColor="@color/ts_text"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginBottom="9dp" />
+
+            <Button
+                android:id="@+id/btnNumberOption3"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="4"
+                android:textSize="18sp"
+                android:textColor="@color/ts_text"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginBottom="9dp" />
+
+            <Button
+                android:id="@+id/btnNumberOption4"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="5"
+                android:textSize="18sp"
+                android:textColor="@color/ts_text"
+                android:backgroundTint="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvNumberFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Count carefully! 😊"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_text"
+            android:gravity="center"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnNumberNext"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Next Question ➜"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:backgroundTint="@color/ts_primary"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/numberResultContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/bg_card_white"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Completed! 🎉"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_text"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Score"
+            android:textSize="20sp"
+            android:textColor="@color/ts_text"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvNumberFinalScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 / 5"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:textColor="@color/ts_primary"
+            android:gravity="center"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:id="@+id/tvNumberResultMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Amazing! You are a Number Star! 🏆"
+            android:textSize="19sp"
+            android:textColor="@color/ts_text"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <Button
+            android:id="@+id/btnNumberPlayAgain"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Play Again 🔄"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/ts_primary"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,51 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="TinySteps"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TinySteps"
-        tools:targetApi="31">
+        android:theme="@style/Theme.TinySteps">
 
+        <!-- Main Home Screen -->
         <activity
-            android:name=".activities.GameActivity"
+            android:name=".MainActivity"
             android:exported="false" />
 
-        <activity
-            android:name=".activities.FoodActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.ShapesActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.ColorsActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.AnimalsActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.NumbersActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.BanglaAlphabetActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.EnglishAlphabetActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".activities.AlphabetActivity"
-            android:exported="false" />
-
+        <!-- Splash Screen -->
         <activity
             android:name=".activities.SplashActivity"
             android:exported="true">
@@ -57,8 +26,56 @@
 
         </activity>
 
+        <!-- Alphabet Activities -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.AlphabetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.EnglishAlphabetActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.BanglaAlphabetActivity"
+            android:exported="false" />
+
+        <!-- Learning Activities -->
+        <activity
+            android:name=".activities.NumbersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.AnimalsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ColorsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ShapesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.FoodActivity"
+            android:exported="false" />
+
+        <!-- Games -->
+        <activity
+            android:name=".activities.GameActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.MemoryGameActivity"
+            android:exported="false" />
+
+        <!-- Quiz Activities -->
+        <activity
+            android:name=".activities.QuizActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.NumberQuizActivity"
             android:exported="false" />
 
     </application>
