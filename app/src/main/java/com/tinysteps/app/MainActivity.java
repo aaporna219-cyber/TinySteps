@@ -16,6 +16,7 @@ import com.tinysteps.app.activities.MemoryGameActivity;
 import com.tinysteps.app.activities.NumbersActivity;
 import com.tinysteps.app.activities.QuizActivity;
 import com.tinysteps.app.activities.NumberQuizActivity;
+import com.tinysteps.app.activities.ShapeQuizActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initializeViews();
+        setupClickListeners();
+    }
+
+    private void initializeViews() {
+
         cardAlphabets = findViewById(R.id.cardAlphabets);
         cardNumbers = findViewById(R.id.cardNumbers);
         cardAnimals = findViewById(R.id.cardAnimals);
@@ -39,56 +46,85 @@ public class MainActivity extends AppCompatActivity {
         cardFood = findViewById(R.id.cardFood);
         cardGame = findViewById(R.id.cardGame);
         cardMemoryGame = findViewById(R.id.cardMemoryGame);
+    }
+
+    private void setupClickListeners() {
 
         cardAlphabets.setOnClickListener(v ->
-                startActivity(new Intent(this, AlphabetActivity.class)));
+                startActivity(new Intent(this, AlphabetActivity.class))
+        );
 
         cardNumbers.setOnClickListener(v ->
-                startActivity(new Intent(this, NumbersActivity.class)));
+                startActivity(new Intent(this, NumbersActivity.class))
+        );
 
         cardAnimals.setOnClickListener(v ->
-                startActivity(new Intent(this, AnimalsActivity.class)));
+                startActivity(new Intent(this, AnimalsActivity.class))
+        );
 
         cardColors.setOnClickListener(v ->
-                startActivity(new Intent(this, ColorsActivity.class)));
+                startActivity(new Intent(this, ColorsActivity.class))
+        );
 
         cardFood.setOnClickListener(v ->
-                startActivity(new Intent(this, FoodActivity.class)));
-
-        cardGame.setOnClickListener(v -> showGamesMenu());
+                startActivity(new Intent(this, FoodActivity.class))
+        );
 
         cardMemoryGame.setOnClickListener(v ->
-                startActivity(new Intent(this, MemoryGameActivity.class)));
+                startActivity(new Intent(this, MemoryGameActivity.class))
+        );
+
+        cardGame.setOnClickListener(v -> showGamesMenu());
     }
 
     private void showGamesMenu() {
 
         String[] games = {
                 "Picture Matching Game 🧩",
-                "Animal Quiz 🐾",
-                "Number Quiz 🔢"
+                "Animal Quiz 🐘",
+                "Number Quiz 🔢",
+                "Shapes Quiz 🔺"
         };
 
-        new AlertDialog.Builder(this)
-                .setTitle("Choose a Game 🎮")
-                .setItems(games, (dialog, which) -> {
+        AlertDialog.Builder builder =
+                new AlertDialog.Builder(this);
 
-                    if (which == 0) {
-                        startActivity(
-                                new Intent(this, GameActivity.class)
-                        );
-                    } else if (which == 1) {
-                        startActivity(
-                                new Intent(this, QuizActivity.class)
-                        );
-                    } else if (which == 2) {
-                        startActivity(
-                                new Intent(this, NumberQuizActivity.class)
-                        );
-                    }
+        builder.setTitle("Choose a Game 🎮");
 
-                })
-                .setNegativeButton("Cancel", null)
-                .show();
+        builder.setItems(games, (dialog, which) -> {
+
+            switch (which) {
+
+                case 0:
+                    startActivity(
+                            new Intent(this, GameActivity.class)
+                    );
+                    break;
+
+                case 1:
+                    startActivity(
+                            new Intent(this, QuizActivity.class)
+                    );
+                    break;
+
+                case 2:
+                    startActivity(
+                            new Intent(this, NumberQuizActivity.class)
+                    );
+                    break;
+
+                case 3:
+                    startActivity(
+                            new Intent(this, ShapeQuizActivity.class)
+                    );
+                    break;
+            }
+        });
+
+        builder.setNegativeButton("Cancel", (dialog, which) ->
+                dialog.dismiss()
+        );
+
+        builder.show();
     }
 }

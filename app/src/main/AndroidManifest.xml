@@ -78,6 +78,10 @@
             android:name=".activities.NumberQuizActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".activities.ShapeQuizActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
